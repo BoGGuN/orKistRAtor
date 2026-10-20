@@ -1,48 +1,38 @@
 # Dependencies
 node_modules/
+.pnp
+.pnp.js
 
-# Build output
+# Build
 dist/
+out/
+release/
+*.exe
+*.dmg
+*.AppImage
+*.deb
+*.rpm
 
-# TypeScript
-*.tsbuildinfo
-
-# Orchestry runtime data
-.orchestry/
-
-# Test coverage
-coverage/
-
-# Internal docs
-docs/
-
-# Landing pages
-landing/
-
-# OS files
-.DS_Store
-Thumbs.db
-
-# Logs
+# Electron
+.electron-builder/
 *.log
-npm-debug.log*
 
-# Editor
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Environment
+# Env / secrets
 .env
 .env.*
 !.env.example
 
-*.cpuprofile
+# IDE / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
 
-.playwright-mcp
-archive
+# Test / coverage
+coverage/
+.nyc_output/
 
-docs
-.env.local
+# App local data (dev)
+.data/
+.tmp/
